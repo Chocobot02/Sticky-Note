@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    background-color: rgb(240, 240, 199);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.homecontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.homecontainer #home-intro{
+    flex: 1;
+    padding: 20px;
+    max-width: 700px;
+}
+.homecontainer #home-intro h1{
+    font-weight: bold;
+    font-size: 100px;
+}
+.homecontainer #home-intro p{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.homecontainer #home-img{
+    flex: 1;
+    text-align: center;
+}
+.homecontainer #home-img img{ 
+    width: 600px;
+    height: 600px;
+    border-radius: 8px;
+}
+.btn-color{
+    background-color: #DFB445;
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 8px 50px;
+    border-radius: 25px;
+    transition:.3s ease;
+}
+
+.btn-color:hover{
+    rotate: 5deg;
+}
+
+.todolist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    margin: 5px 5px;
+    align-items: center;
+}
+
+.todocomponents {
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+#addutil{
+    flex: 0 0 30%;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 30px 10px 0 10px;
+    margin: 0;
+}
+
+#list{
+    flex: 1;
+    padding: 20px;
+    max-width: calc(100% - 20);
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    height: 700px;
+    overflow-y: auto;
+}
+
+#list .stickerwall{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#list .stickerwall .sticker{
+    background-color: #F3D9B1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 270px;
+    height: 250px;
+    margin: 5px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#list .stickerwall .sticker .sticker-title{
+    min-height: 20px;
+    overflow: hidden;
+    flex: 1;
+    margin: 20px;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+.metadata #trash a.removeitem {
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #333; 
+    font-size: 2rem;   
+}
+
+

@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .todolist {
+        flex-direction: column;
+    }
+    #list .stickerwall{
+        justify-content: center;
+    }
+    .html{
+        font-size: 95%;
+    }
+    .homecontainer {
+        flex-direction: column;
+    }
+}

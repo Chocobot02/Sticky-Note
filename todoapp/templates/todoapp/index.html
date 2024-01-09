@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<div class='homecontainer'>
+    <div id='home-intro'>
+        <h1>Sticky Notes</h1>
+            <p>Elevate your productivity with our digital sticky notes.
+            Mark tasks as important, stay on top of your priorities,
+            and transform the way you organize your day. Simple, effective,
+            and always at your fingertips</p>
+            <a href='{% url "todoapp:todolist" %}'>
+                <button type="button" class="btn-color">ToDo List</button>
+            </a>
+    </div>
+    <div id='home-img'>
+        <img src="{% static "todoapp/images/pngsee.png" %}" class="rounded mx-auto d-block" alt="...">
+    </div>
+</div>
+
+
+{% endblock content %}
